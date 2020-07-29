@@ -1,0 +1,67 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 550px;
+  padding: 24px 16px;
+  background-color: #e0e2e2;
+  border: 2px solid #878a8c;
+  border-radius: 2px;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.boxLeft {
+  flex-grow: 2;
+}
+
+.boxRight {
+  flex-grow: 1;
+}
+
+.buttons {
+  margin-top: 18px;
+}
+.label {
+  color: #505152;
+  padding-left: 10px;
+}
+.input {
+  margin-top: 10px;
+  height: 1.8rem;
+}
+
+.buttons {
+  padding: 6px 16px;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+.primary {
+  background-color: #3dbeff;
+}
+.primary:hover {
+  background-color: #319dd4;
+  color: white;
+}
+
+.display {
+  color: #505152;
+}
+
+.displayItemLine {
+  padding-bottom: 10px;
+}
+
+.displayItemText {
+  padding-left: 10px;
+  color: slateblue;
+}
