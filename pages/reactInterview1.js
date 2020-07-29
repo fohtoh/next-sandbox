@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import styles from '../styles/ReactInterview1.module.css';
+import { Input } from '../components/reactInterview/Input';
+import { Button } from '../components/reactInterview/Button';
 
 export default function ReactInterview1() {
   const [name, setName] = useState();
@@ -54,42 +56,3 @@ export default function ReactInterview1() {
     </Fragment>
   );
 }
-
-const Input = props => {
-  const [value, setValue] = useState();
-  const { id, label, name, size } = props;
-
-  const handleChange = event => {
-    setValue(event.target.value);
-  };
-
-  return (
-    <div>
-      <label className={styles.label}>{label}</label>
-      <br />
-      <input
-        id={id}
-        className={styles.input}
-        type="text"
-        name={name}
-        onChange={handleChange}
-        input={value}
-        size={size}
-      />
-    </div>
-  );
-};
-
-const Button = props => {
-  const { text, onButtonClick, primary } = props;
-
-  return (
-    <button
-      className={`${styles.buttons} ${primary ? styles.primary : ''}`}
-      type="button"
-      onClick={onButtonClick}
-    >
-      {text}
-    </button>
-  );
-};
